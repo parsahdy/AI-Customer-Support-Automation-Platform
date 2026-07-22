@@ -41,16 +41,16 @@
 
 
 # Dataset Name 4
-  Brazilian E-Commerce Public Dataset
+  CRM🚀 + Sales📊 + Opportunities (Sales_pipeline)
 
 - Source
-  https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+  https://www.kaggle.com/datasets/innocentmfa/crm-sales-opportunities/data
 
 - Rows
-  ~100,000 orders with customer and reviews info
+  499 records (each record represents a single sales opportunity/deal in the CRM sales pipeline).
 
 - Columns
-  Multiple tables: customers (customer_id, customer_unique_id, city, state), orders (order_id, customer_id, status, timestamps), plus products, order_items, reviews, etc. 
+  25 fields, including typical pipeline fields such as Deal_ID, Deal_Name, Sales_Rep_ID, Sales_Rep_Name, Stage, Amount, Close_Date, Account_Name, Region, Industry, Created_Date, Last_Activity_Date, Next_Step, etc. . 
 
 - Purpose
-  Customer profiling, order count, location, and VIP segmentation logic
+  To model and analyze CRM sales opportunities: tracking deals through different pipeline stages, measuring revenue potential and win probability, monitoring sales activities, and enabling predictive analytics (deal scoring, win/loss prediction, time-to-close estimation) for AI-powered sales/office automation workflows.
