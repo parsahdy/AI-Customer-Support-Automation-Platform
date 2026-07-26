@@ -117,12 +117,14 @@ def standardize_sales_opportunities(df):
             "product",
             "account",
             "deal_stage",
+            "engage_date",
             "close_date",
             "close_value"
         ]
     
     df = df[columns_to_keep]
 
+    df["engage_date"] = pd.to_datetime(df["engage_date"])
     df["close_date"] = pd.to_datetime(df["close_date"])
     df["close_value"] = pd.to_numeric(df["close_value"])
 
