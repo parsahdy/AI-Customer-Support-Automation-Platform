@@ -100,8 +100,6 @@ def convert_to_csv():
 
     df = pd.DataFrame(data["questions"])
 
-    df = standardize_knowledge_documents(df)
-
     df.to_csv(
         "ecommerce_faq_knowledge_base.csv",
         index=False,
