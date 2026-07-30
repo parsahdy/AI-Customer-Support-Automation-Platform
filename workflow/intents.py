@@ -43,6 +43,7 @@ INTENT_KEYWORDS = {
         "help with",
         "broken",
         "glitch",
+        "crash",
     ],
 
     "refund": [
