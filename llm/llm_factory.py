@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 from langchain_ollama import OllamaLLM
+from .config import config
 
 
 class BaseLLM(ABC):
@@ -16,8 +17,8 @@ class LocalLLM(BaseLLM):
         print("Loading Local Model...")
 
         self.llm = OllamaLLM(
-            model="llama3.1",
-            base_url="http://ollama:11434"
+            model=config["llm_model"],
+            base_url=config["ollama_base_url"]
         )
 
     def generate(self, prompt):
@@ -44,22 +45,20 @@ class HuggingFaceLLM(BaseLLM):
     def generate(self, prompt):
         return "HuggingFace Response."
 
+class LLMFactory:
 
-LLM_REGISTERY = {
+    _registry = {
     "local": LocalLLM,
     "openai": OpenAILLM,
     "huggingface": HuggingFaceLLM,
-}
-
-
-class LLMFactory:
+    }
 
     @staticmethod
-    def create(provider: str):
+    def create(provider: str) -> BaseLLM:
 
-        if provider not in LLM_REGISTERY:
+        if provider not in LLMFactory._registry:
             raise ValueError(
                 f"Unknown provider: {provider}"
             )
 
-        return LLM_REGISTERY[provider]()
+        return LLMFactory._registry[provider]()
