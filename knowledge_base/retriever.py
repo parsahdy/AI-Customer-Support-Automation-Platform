@@ -2,8 +2,8 @@ from pathlib import Path
 
 import numpy as np
 
-from embedding_model import load_embedding_model
-from vector_store import load_index, load_documents
+from .embedding_model import load_embedding_model
+from .vector_store import load_index, load_documents
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]

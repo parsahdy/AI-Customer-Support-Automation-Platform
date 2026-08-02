@@ -3,8 +3,8 @@ from pathlib import Path
 import pandas as pd
 import time
 
-from document_loader import row_to_document
-from vector_store import build_vector_store, save_index, save_documents
+from .document_loader import row_to_document
+from .vector_store import build_vector_store, save_index, save_documents
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]

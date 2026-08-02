@@ -4,7 +4,7 @@ import faiss
 import numpy as np
 import json
 
-from embedding_model import load_embedding_model
+from .embedding_model import load_embedding_model
 
 
 def build_vector_store(docs: list[dict]) -> tuple[faiss.Index, np.ndarray]:
