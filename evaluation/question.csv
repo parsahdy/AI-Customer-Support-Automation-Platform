@@ -1,0 +1,57 @@
+﻿question,expected_intent
+How can I track my order?,order_tracking
+Where is my package?,order_tracking
+Can you tell me the status of my shipment?,order_tracking
+I want to know where my delivery is,order_tracking
+How do I check my order progress?,order_tracking
+My order hasn't arrived yet,shipping
+The package is late,shipping
+My parcel is not here yet,shipping
+When will my shipment arrive?,shipping
+I didn't receive my item,shipping
+My order is taking too long,shipping
+Why is my delivery delayed?,shipping
+Can you fix an issue with the website?,technical_support
+The app keeps crashing,technical_support
+I cannot log into the app,technical_support
+The checkout page is not loading,technical_support
+My payment page shows an error,technical_support
+I am having trouble using the website,technical_support
+I want my money back,refund
+How can I get a refund?,refund
+Please refund my payment,refund
+I would like to return this item and get my money back,refund
+My refund hasn't arrived yet,refund
+Can you process my refund?,refund
+How do I change my password?,account
+I forgot my password,account
+I need to reset my password,account
+How can I update my login password?,account
+My account password is not working,account
+How do I update my email address?,account
+I want to change the email on my account,account
+Can you tell me more about this product?,product_information
+What are the features of this item?,product_information
+Is this product available in black?,product_information
+How big is this product?,product_information
+Does this item come with a warranty?,product_information
+Can I see the product details?,product_information
+How do I return this item?,returning_products
+I want to send back the product,returning_products
+What is the return process?,returning_products
+I received the wrong item and want to return it,returning_products
+Can I exchange this product?,returning_products
+How can I pay for my order?,payment
+My card was declined,payment
+The payment did not go through,payment
+Can I use PayPal to pay?,payment
+I was charged twice for my order,payment
+I need help placing an order,ordering
+How do I buy this product?,ordering
+Can I order more than one item?,ordering
+I want to place a new order,ordering
+How do I add this item to my cart?,ordering
+I need help with something else,other
+This is not what I wanted,other
+I have a general question,other
+I need support with another issue,other

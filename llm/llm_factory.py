@@ -15,15 +15,13 @@ class LocalLLM(BaseLLM):
     def __init__(self):
 
         print("Loading Local Model...")
-
         self.llm = OllamaLLM(
             model=config["llm_model"],
             base_url=config["ollama_base_url"]
         )
-
+        
     def generate(self, prompt):
-
-        return self.llm.invoke(prompt)
+        return self.llm.invoke(prompt) 
 
 
 class OpenAILLM(BaseLLM):

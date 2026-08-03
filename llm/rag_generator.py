@@ -31,6 +31,7 @@ def generator(question: str) -> str:
 
 if __name__ == "__main__":
     question = input("Ask any question: ")
-    generator(question)
+    response = generator(question)
+    print(response)
 
     
