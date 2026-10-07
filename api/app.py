@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends, status
 from sqlalchemy.orm import Session
 
 from . import models, schemas, database
-from .database import engine, get_db
+from .database import engine
 from .routes import router
 from services.qa_service import ask
 

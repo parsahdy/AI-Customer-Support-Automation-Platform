@@ -7,8 +7,6 @@ import unicodedata
 import pandas as pd
 
 
-
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 INPUT_DIR = PROJECT_ROOT / "data" / "processed"
 OUTPUT_DIR = PROJECT_ROOT / "data" / "cleaned"
